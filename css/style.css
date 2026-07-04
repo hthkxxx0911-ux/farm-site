@@ -132,10 +132,21 @@ FV（PC）
         font-size: 14px;
     }
 
-    .fv {
-        height: 100vh;
-        background-position: center;
-        background-size: cover;
+     .fv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* ←これ重要 */
+    }
+        .fv-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fv img {
+        display: block;
+        width: 160px;
     }
 
     .fv-logo {
