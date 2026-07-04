@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header {
     position: absolute;
     top: 20px;
@@ -115,4 +116,95 @@
     .fv-logo {
         width: 160px;
     }
+=======
+.header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    padding: 20px 60px;
+
+    background: #fff;
+    border-radius: 50px;
+
+    z-index: 10;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav li {
+    display: flex;
+    align-items: center;
+}
+
+.nav a:hover {
+    opacity: 0.6;
+}
+
+.fv {
+    height: 100vh;
+    background-image: url("../img/FV（仮）.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fv-logo {
+    width: 250px; /* XDを見ながら調整 */
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 50px;
+
+    background-color: #f7b560;
+    color: #fff;
+    border-radius: 9999px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
+    padding: 0;
+    line-height: 1;
+}
+
+.nav a.contact-btn {
+    color: #fff;
+}
+
+.contact-btn:hover {
+    opacity: 0.8;
+>>>>>>> 27c876155de2d9c4797fb6cf6aada23f4e247d84
 }
