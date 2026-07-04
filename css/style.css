@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .header {
     position: absolute;
     top: 20px;
@@ -10,7 +9,7 @@
     align-items: center;
 
     width: 90%;
-    padding: 20px 30px;
+    padding: 20px 60px;
 
     background: #fff;
     border-radius: 50px;
@@ -18,6 +17,7 @@
     z-index: 10;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
+
 .logo {
     font-weight: bold;
     font-size: 18px;
@@ -206,5 +206,4 @@
 
 .contact-btn:hover {
     opacity: 0.8;
->>>>>>> 27c876155de2d9c4797fb6cf6aada23f4e247d84
 }
