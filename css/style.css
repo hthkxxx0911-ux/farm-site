@@ -1,4 +1,3 @@
-
 /* =====================
 ヘッダー（PC）
 ===================== */
@@ -27,6 +26,7 @@
     font-size: 18px;
 }
 
+/* PCメニュー（横並び） */
 .nav ul {
     display: flex;
     flex-direction: row;
@@ -51,7 +51,7 @@
 }
 
 /* =====================
-FV（PC）
+FV
 ===================== */
 .fv {
     height: 100vh;
@@ -89,12 +89,82 @@ FV（PC）
     line-height: 1;
 }
 
-.nav a.contact-btn {
-    color: #fff;
+/* ハンバーガー（初期状態） */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
 }
 
-.contact-btn:hover {
-    opacity: 0.8;
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    display: block;
+    border-radius: 2px;
+}
+
+/* =====================
+スマホ
+===================== */
+@media screen and (max-width: 768px) {
+
+    .header {
+        width: 95%;
+        padding: 15px 20px;
+        border-radius: 30px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    /* ハンバーガー表示 */
+    .hamburger {
+        display: flex;
+        z-index: 100;
+    }
+
+    /* メニューは非表示 */
+    .nav {
+        display: none;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        width: 220px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.15);
+        padding: 20px;
+    }
+
+    /* 開いた時 */
+    .nav.active {
+        display: block;
+    }
+
+    /* スマホは縦並び（ここが通常状態） */
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-btn {
+        width: 100%;
+        height: 45px;
+    }
 }
 
 /* スマホ */
@@ -102,6 +172,21 @@ FV（PC）
 
     .hamburger {
         display: flex;
+    }
+
+    .header {
+        width: 95%;
+        padding: 15px 20px;
+        border-radius: 30px;
+    }
+
+    .logo img {
+        width: 120px;
+    }  
+
+    .hamburger {
+        display: flex;
+        z-index: 100;
     }
 
     .nav {
