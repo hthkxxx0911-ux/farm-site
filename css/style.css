@@ -69,6 +69,27 @@ FV
     width: 250px;
 }
 
+.fv-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* キャッチコピー */
+.fv-copy {
+    font-size: 40px;
+    font-weight: 600;
+    color: #93C572;
+    text-align: center;
+
+    letter-spacing: 0.05em;
+
+    /* 影つけると読みやすい */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
 /* ボタン */
 .contact-btn {
     display: flex;
@@ -89,7 +110,6 @@ FV
     line-height: 1;
 }
 
-/* ハンバーガー（初期状態） */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -101,14 +121,11 @@ FV
 .hamburger span {
     width: 30px;
     height: 3px;
-    background: #333;
+    background: #666;
     display: block;
     border-radius: 2px;
 }
 
-/* =====================
-スマホ
-===================== */
 @media screen and (max-width: 768px) {
 
     .header {
@@ -121,13 +138,23 @@ FV
         width: 120px;
     }
 
-    /* ハンバーガー表示 */
+    /* ハンバーガー */
     .hamburger {
         display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
         z-index: 100;
     }
 
-    /* メニューは非表示 */
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background: #333;
+        display: block;
+    }
+
+    /* メニュー */
     .nav {
         display: none;
         position: absolute;
@@ -140,12 +167,10 @@ FV
         padding: 20px;
     }
 
-    /* 開いた時 */
     .nav.active {
         display: block;
     }
 
-    /* スマホは縦並び（ここが通常状態） */
     .nav ul {
         display: flex;
         flex-direction: column;
@@ -164,68 +189,24 @@ FV
     .contact-btn {
         width: 100%;
         height: 45px;
-    }
-}
 
-/* スマホ */
-@media screen and (max-width: 768px) {
-
-    .hamburger {
         display: flex;
-    }
-
-    .header {
-        width: 95%;
-        padding: 15px 20px;
-        border-radius: 30px;
-    }
-
-    .logo img {
-        width: 120px;
-    }  
-
-    .hamburger {
-        display: flex;
-        z-index: 100;
-    }
-
-    .nav {
-        display: none;
-        position: absolute;
-        top: 90px;
-        right: 20px;
-        width: 220px;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,.15);
-        padding: 20px;
-    }
-
-    .nav.active {
-        display: block;
-    }
-
-    .nav ul {
-        display: flex;
-        flex-direction: column;   /* ← 縦並び */
+        justify-content: center;
         align-items: center;
-        gap: 15px;
-    }
 
-    .nav li {
-        width: 100%;
-    }
-
-    .nav a {
-        display: block;
-        width: 100%;
-        text-align: center;
         font-size: 14px;
-        padding: 10px 0;
+        color: #fff;
+
+        background-color: #f7b560;
+        border-radius: 9999px;
+
+        text-decoration: none;
+
+        line-height: 1;
     }
 
-    .contact-btn {
-        width: 100%;
-        height: 45px;
+    .fv-copy {
+        font-size: 32px;
+        padding: 0 10px;
     }
 }
