@@ -110,6 +110,10 @@ FV
     line-height: 1;
 }
 
+.nav a.contact-btn {
+    color: #fff;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -203,6 +207,10 @@ FV
         text-decoration: none;
 
         line-height: 1;
+    }
+
+    .nav .contact-btn {
+        color: #fff;
     }
 
     .fv-copy {
