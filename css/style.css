@@ -191,34 +191,27 @@ FV
     }
 
     .contact-btn {
-        width: 100%;
-        height: auto;
+    display: block;
+    width: 100%;
 
-        display: block;
+    background: none;
+    color: #333;
 
-        font-size: none;
-        color: #333;
+    padding: 10px 0;
 
-        border-radius: 0;
+    border-radius: 0;
+    height: auto;
 
-        font-size: 14px;
-        font-weight: 700;
-
-        text-align: center;
-        text-decoration: none;
-
-        padding: 10px 0;
-    }
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
 
     .nav .contact-btn {
-        color: #fff;
+        background: none;
+        color: #333;
     }
-
-    .fv-copy {
-        font-size: 32px;
-        padding: 0 10px;
-    }
-}
 
 /* =====================
 FV
@@ -280,7 +273,7 @@ NEWS
     right: 60px;
     bottom: 50px;
 
-    width: 340px;
+    width: 700px;
     height: 140px;
 
     background: #f7b560;
@@ -304,18 +297,38 @@ NEWS
 NEWS（スマホ）
 ===================== */
 
+@media screen and (max-width: 768px) {
+
 .news-box {
-    width: 200px;
+    position: absolute;
+
+    width: 90%;
+    max-width: 340px;
     height: 90px;
 
-    right: 15px;
-    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+
+    bottom: 90px;
+
+    background: #f7b560;
+    border-radius: 20px;
 
     padding: 14px 16px;
+    box-sizing: border-box;
 
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.scroll {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
 }
 
+}
 .news-title {
     font-size: 16px;
     margin-bottom: 4px;
