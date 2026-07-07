@@ -433,24 +433,26 @@ NEWS（PC）
   overflow: hidden;
 }
 
+.activity-box {
+  overflow: hidden;
+}
+
 /* 文章 */
 .activity-content {
   margin-bottom: 60px;
   text-align: left;
 }
 
-
 /* Swiper */
 .activity-swiper {
-  width: 1063px;
+  width: calc(100% - 50px);
   height: 250px;
 
-  margin-top: 300px;
-  margin-left: 0;
+  margin-top: 60px;
+  margin-left: -80px;
 
   overflow: hidden;
 }
-
 
 /* Swiperの高さ固定 */
 .activity-swiper .swiper-wrapper {
@@ -468,14 +470,6 @@ NEWS（PC）
   overflow: hidden;
 }
 
-.activity-swiper {
-  width: 100%;
-  height: 250px;
-
-  margin-top: 60px;
-  
-  overflow: hidden;
-}
 
 .activity-slide img {
   width: 100%;
