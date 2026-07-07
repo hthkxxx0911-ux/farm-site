@@ -360,34 +360,29 @@ NEWS（PC）
 
 .activity-box {
   width: 1163px;
-  height: 730px;
+  min-height: 730px;
 
-  background: #FFFFFF;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.16);
-
+  background: #fff;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.16);
   border-radius: 0 100px 100px 0;
 
-  position: relative;
-  overflow: hidden;
+  padding: 80px;
+  box-sizing: border-box;
 }
 
 
 /* 文章 */
 .activity-content {
-  padding-top: 80px;
-  padding-left: 80px;
+  margin-bottom: 60px;
 }
 
 
 /* Swiper */
 .activity-swiper {
-  position: absolute;
-
-  bottom: 80px;
-  right: 50px;
-
   width: 1063px;
   height: 250px;
+
+  margin-left: -159px;
 
   overflow: hidden;
 }
@@ -399,23 +394,18 @@ NEWS（PC）
 }
 
 
-/* 写真 */
 .activity-slide {
-  width: 300px !important;
+  width: 300px;
   height: 250px;
-
-  overflow: hidden;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 
-/* 画像 */
-.activity-slide img {
-  display: block;
 
+.activity-slide img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 }
 

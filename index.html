@@ -106,7 +106,6 @@
         </p>
     </div>
 
-
     <div class="swiper activity-swiper">
       <div class="swiper-wrapper">
 
@@ -145,21 +144,18 @@ hamburger.addEventListener("click", () => {
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-  const swiper = new Swiper(".activity-swiper", {
+const swiper = new Swiper(".activity-swiper", {
+  slidesPerView: "3.5",
+  spaceBetween: 24,
+  loop: true,
 
-    slidesPerView: "auto",
-    spaceBetween: 24,
+  autoplay: {
+    delay: 2500,              // 2.5秒ごとにスライド
+    disableOnInteraction: false,
+  },
 
-    loop: true,
-
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-
-    speed: 1000,
-
-  });
+  speed: 1000,                // スライド速度（1秒）
+});
 
 });
 </script>
