@@ -97,40 +97,34 @@
   <div class="activity-box">
 
     <div class="activity-content">
-
-      <h2 class="section-title">活動紹介</h2>
-
-      <h3 class="activity-subtitle">
-        農園、牧場、オンライン販売
-      </h3>
-
-      <p class="activity-text">
-        私たちは、「持続可能な農業」を掲げて、自然の恵みに感謝しながら、農作物を育てています。<br>
-        無農薬で、体にも環境にもやさしく、季節ごとに異なる品種を育て、提供しています。<br>
-        ぜひ一度、農園にお越し頂き、自分の手で収穫した新鮮な野菜、果物をお召し上がりください。
-      </p>
-
+      <h2>活動紹介</h2>
+      <h3>農園、牧場、オンライン販売</h3>
+        <p class="activity-text">
+           私たちは、「持続可能な農業」を掲げて、自然の恵みに感謝しながら、農作物を育てています。<br>
+           無農薬で、体にも環境にもやさしく、季節ごとに異なる品種を育て、提供しています。<br>
+           ぜひ一度、農園にお越し頂き、自分の手で収穫した新鮮な野菜、果物をお召し上がりください。
+        </p>
     </div>
 
 
-<div class="swiper activity-swiper">
-  <div class="swiper-wrapper">
+    <div class="swiper activity-swiper">
+      <div class="swiper-wrapper">
 
-    <div class="swiper-slide activity-slide">
-      <img src="img/farm.jpg" alt="畑">
-    </div>
+        <div class="swiper-slide activity-slide">
+          <img src="img\AdobeStock_367389499.jpg" alt="畑">
+        </div>
 
-    <div class="swiper-slide activity-slide">
-      <img src="img/harvest.jpg" alt="収穫">
-    </div>
+        <div class="swiper-slide activity-slide">
+          <img src="img\AdobeStock_562266191.jpg" alt="収穫">
+        </div>
 
-    <div class="swiper-slide activity-slide">
-      <img src="img/vegetables.jpg" alt="野菜たち">
-    </div>
+        <div class="swiper-slide activity-slide">
+          <img src="img\AdobeStock_545162233.jpg" alt="野菜たち">
+        </div>
 
-    <div class="swiper-slide activity-slide">
-      <img src="img/producer.jpg" alt="生産者">
-    </div>
+        <div class="swiper-slide activity-slide">
+          <img src="img\AdobeStock_382800161.jpg" alt="生産者">
+        </div>
 
     </div>
   </div>
@@ -152,8 +146,19 @@ hamburger.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
 
   const swiper = new Swiper(".activity-swiper", {
-  slidesPerView: 3,
-  spaceBetween: 24,
+
+    slidesPerView: "auto",
+    spaceBetween: 24,
+
+    loop: true,
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+
+    speed: 1000,
+
   });
 
 });

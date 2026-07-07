@@ -353,6 +353,7 @@ NEWS（PC）
 /* =====================
 活動紹介
 ===================== */
+
 .activity {
   position: relative;
 }
@@ -365,28 +366,16 @@ NEWS（PC）
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.16);
 
   border-radius: 0 100px 100px 0;
-  opacity: 1;
 
   position: relative;
   overflow: hidden;
 }
 
 
-/* =====================
-活動紹介
-===================== */
-
-.activity-box {
-  width: 1163px;
-  height: 730px;
-
-  background: #FFFFFF;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.16);
-
-  border-radius: 0 100px 100px 0;
-
-  position: relative;
-  overflow: hidden;
+/* 文章 */
+.activity-content {
+  padding-top: 80px;
+  padding-left: 80px;
 }
 
 
@@ -404,29 +393,30 @@ NEWS（PC）
 }
 
 
+/* Swiperの高さ固定 */
+.activity-swiper .swiper-wrapper {
+  height: 250px;
+}
+
+
 /* 写真 */
 .activity-slide {
-  width: 300px;
+  width: 300px !important;
   height: 250px;
-
-  flex-shrink: 0;
 
   overflow: hidden;
   border-radius: 20px;
 }
 
+
+/* 画像 */
 .activity-slide img {
   display: block;
+
   width: 100%;
   height: 100%;
 
   object-fit: cover;
-}
-
-
-.activity-swiper {
-  height: 250px;
-  background: rgba(255,0,0,0.2);
 }
 
 /* スマホ版 */
