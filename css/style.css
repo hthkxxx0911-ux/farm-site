@@ -419,9 +419,12 @@ NEWS（PC）
   color: #fff; /* 白文字 */
 }
 
-.activity-content {
+.activity-text {
   width: 700px;
-  margin: 40px auto 60px;
+
+  margin-top: 40px;
+  margin-left: 203px;
+  margin-bottom: 60px;
 
   text-align: left;
   color: #555;
