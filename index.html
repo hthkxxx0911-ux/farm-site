@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -17,12 +19,12 @@
 
     <nav class="nav">
         <ul>
-            <li><a href="#">私たちについて</a></li>
-            <li><a href="#">活動紹介</a></li>
-            <li><a href="#">よくあるご質問</a></li>
-            <li><a href="#">おしらせ</a></li>
-            <li><a href="#">アクセス</a></li>
-            <li><a href="#" class="contact-btn">お問い合わせ</a></li>
+            <li><a href="about">私たちについて</a></li>
+            <li><a href="activity">活動紹介</a></li>
+            <li><a href="faq">よくあるご質問</a></li>
+            <li><a href="news">おしらせ</a></li>
+            <li><a href="access">アクセス</a></li>
+            <li><a href="contact" class="contact-btn">お問い合わせ</a></li>
         </ul>
     </nav>
 
@@ -58,15 +60,104 @@
     </div>
 </section>
 
- <script>
-   const hamburger = document.getElementById("hamburger");
-   const nav = document.querySelector(".nav");
+ <section id="about" class="about">
+  <div class="about-box">
 
-   hamburger.addEventListener("click", () => {
-   nav.classList.toggle("active");
-   });
- </script>
+    <!-- ヤギ -->
+    <img src="img\マスクグループ 2.png" alt="ヤギ" class="about-goat">
 
+    <!-- トマト -->
+    <img src="img\マスクグループ 3.png" alt="トマト" class="about-tomato">
+
+    <!-- 真ん中のコンテンツ -->
+    <div class="about-content">
+      <img src="img\logo.svg" alt="自然の恵み農園" class="about-logo">
+
+      <p class="about-text">
+        自然の恵み農園は、<br>
+        自然の恵みと動物の尊さが調和する特別な場所です。<br>
+        新鮮で美味しい農産物を栽培し、心温まる動物たちと触れ合える場所でもあります。<br><br>
+
+        自然の恵みを受け、動物たちとの特別なひとときを楽しんでいただける場所として、<br>
+        私たちは誇りを持って活動をしています。<br>
+        一緒に自然と動物の美しさを共有しましょう。
+      </p>
+    </div>
+
+    <!-- 生産者 -->
+    <img src="img\マスクグループ 6.png" alt="生産者" class="about-farmer">
+
+    <!-- 牛 -->
+    <img src="img\グループ 1536.png" alt="牛" class="about-cow">
+
+  </div>
+</section>
+
+<section class="activity">
+  <div class="activity-box">
+
+    <div class="activity-content">
+
+      <h2 class="section-title">活動紹介</h2>
+
+      <h3 class="activity-subtitle">
+        農園、牧場、オンライン販売
+      </h3>
+
+      <p class="activity-text">
+        私たちは、「持続可能な農業」を掲げて、自然の恵みに感謝しながら、農作物を育てています。<br>
+        無農薬で、体にも環境にもやさしく、季節ごとに異なる品種を育て、提供しています。<br>
+        ぜひ一度、農園にお越し頂き、自分の手で収穫した新鮮な野菜、果物をお召し上がりください。
+      </p>
+
+    </div>
+
+
+<div class="swiper activity-swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide activity-slide">
+      <img src="img/farm.jpg" alt="畑">
+    </div>
+
+    <div class="swiper-slide activity-slide">
+      <img src="img/harvest.jpg" alt="収穫">
+    </div>
+
+    <div class="swiper-slide activity-slide">
+      <img src="img/vegetables.jpg" alt="野菜たち">
+    </div>
+
+    <div class="swiper-slide activity-slide">
+      <img src="img/producer.jpg" alt="生産者">
+    </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const swiper = new Swiper(".activity-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  });
+
+});
+</script>
 
 </body>
 </html>
