@@ -365,25 +365,26 @@ NEWS（PC）
   line-height: 68px;
   font-weight: normal;
 
+  margin-left: 203px;
+
   display: inline-block;
   position: relative;
 
   margin-bottom: 35px;
 }
 
-/* 2波の緩やかな波線 */
 .activity-title::after {
   content: "";
   position: absolute;
 
   left: 50%;
-  bottom: -3px;
+  bottom: -4px;
   transform: translateX(-50%);
 
-  width: 120px;
+  width: 180px;
   height: 12px;
 
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='12' viewBox='0 0 120 12'%3E%3Cpath d='M0 6 C15 0, 30 0, 45 6 S75 12, 90 6 S105 0, 120 6' fill='none' stroke='%234F8A3D' stroke-width='3'/%3E%3C/svg%3E")
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='12' viewBox='0 0 220 12'%3E%3Cpath d='M0 6 C35 0, 70 12, 110 6 C150 0, 185 12, 220 6' fill='none' stroke='%234F8A3D' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")
   no-repeat center / contain;
 }
 
