@@ -446,14 +446,18 @@ NEWS（PC）
   overflow: hidden;
 }
 
-/* Swiper */
 .activity-swiper {
-  width: calc(100% + 30px);
+  width: calc(100% + 80px);
   height: 250px;
 
   margin-top: 60px;
   margin-left: -80px;
 
+  overflow: hidden;
+}
+
+.activity-swiper-wrap {
+  width: calc(100% - 50px);
   overflow: hidden;
 }
 
