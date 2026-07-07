@@ -382,6 +382,8 @@ NEWS（PC）
   width: 1063px;
   height: 250px;
 
+  margin-top: 300px;
+
   margin-left: -159px;
 
   overflow: hidden;
@@ -393,7 +395,6 @@ NEWS（PC）
   height: 250px;
 }
 
-
 .activity-slide {
   width: 300px;
   height: 250px;
@@ -401,7 +402,10 @@ NEWS（PC）
   overflow: hidden;
 }
 
-
+.activity-swiper {
+  margin-left: 0;
+  padding-left: 0;
+}
 
 .activity-slide img {
   width: 100%;
