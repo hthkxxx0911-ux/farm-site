@@ -452,6 +452,7 @@ NEWS（PC）
 
   margin-top: 60px;
   margin-left: -80px;
+  transform: translateX(-70px);
 
   overflow: hidden;
 }
