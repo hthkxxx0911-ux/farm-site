@@ -315,7 +315,7 @@ NEWS（PC）
 .about-text {
   font-size: 16px;
   line-height: 2;
-  color: #333;
+  color: #555;
 }
 
 /*＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -419,6 +419,15 @@ NEWS（PC）
   color: #fff; /* 白文字 */
 }
 
+.activity-content {
+  width: 700px;
+  margin: 40px auto 60px;
+
+  text-align: left;
+  color: #555;
+  line-height: 2;
+}
+
 .activity-box {
   width: 1163px;
   min-height: 730px;
@@ -437,15 +446,9 @@ NEWS（PC）
   overflow: hidden;
 }
 
-/* 文章 */
-.activity-content {
-  margin-bottom: 60px;
-  text-align: left;
-}
-
 /* Swiper */
 .activity-swiper {
-  width: calc(100% - 50px);
+  width: calc(100% + 30px);
   height: 250px;
 
   margin-top: 60px;
