@@ -763,6 +763,65 @@ NEWS（PC）
   color: #555;
 }
 
+.access {
+  padding: 120px 20px;
+  background: #fff;
+}
+
+.access-box {
+  width: 960px;
+  height: 600px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 100px;
+  overflow: hidden; /* 左の緑部分も角丸に合わせる */
+  display: flex;
+  margin: 0 auto;
+}
+
+.access-left {
+  width: 250px;
+  height: 600px;
+  background: #93C572;
+  flex-shrink: 0;
+}
+
+.access-left ul {
+  list-style: none;
+}
+
+.access-left li {
+  font-size: 32px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.map-title {
+  margin-top: 120px;
+}
+
+.map-link {
+  font-size: 20px !important;
+}
+
+.access-right {
+  flex: 1;
+}
+
+.access-info {
+  padding: 80px;
+}
+
+.access-info p {
+  font-size: 32px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.access-map iframe {
+  display: block;
+}
 
 /* スマホ版 */
 @media screen and (max-width: 768px) {
