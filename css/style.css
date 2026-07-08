@@ -600,12 +600,14 @@ NEWS（PC）
 .news-section-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 80px;
 }
 
 .news-section-text {
-  width: 30%;
+  width: 35%;
   padding-left: 100px;
+  transform: translateX(120px);
 }
 
 /* =====================
@@ -639,7 +641,6 @@ NEWS（PC）
 }
 
 
-/* View More ボタン */
 /* View More ボタン */
 .view-more-btn {
   display: flex;
@@ -679,7 +680,7 @@ NEWS（PC）
 }
 
 .news-list-box {
-  width: 683px;
+  width: 750px;
   min-height: 438px;
 
   background: #fff;
