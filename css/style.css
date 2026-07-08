@@ -780,3 +780,45 @@ NEWS（PC）
     height: 180px;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+.faq-item {
+width: calc(100% - 40px);
+margin-left: auto;
+margin-right: auto;
+border-radius: 40px;
+}
+
+.faq-question {
+height: auto;
+min-height: 70px;
+padding: 20px 25px;
+}
+
+.q-left,
+.a-left {
+gap: 15px;
+}
+
+.q,
+.a {
+font-size: 30px;
+}
+
+.q-left p,
+.a-left p {
+font-size: 16px;
+line-height: 1.6;
+}
+
+.icon {
+font-size: 32px;
+}
+
+.faq-answer {
+height: auto;
+padding: 15px 25px 25px;
+}
+
+}
