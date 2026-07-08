@@ -137,6 +137,92 @@
   </div>
 </section>
 
+<section class="faq">
+  <div class="inner">
+
+    <h2 class="section-title">
+      よくあるご質問
+      <span></span>
+    </h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item active">
+        <button class="faq-question">
+          <div class="q-left">
+            <span class="q">Q</span>
+            <p>農園の野菜や果物は有機栽培ですか？</p>
+          </div>
+          <span class="icon">－</span>
+        </button>
+
+        <div class="faq-answer">
+          <div class="a-left">
+            <span class="a">A</span>
+            <p>
+              はい、私たちの農園では有機栽培の原則に従って野菜と果物を栽培しています。<br>
+              化学肥料や農薬を極力使用せず、土壌と作物の健康を第一に考えております。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <div class="q-left">
+            <span class="q">Q</span>
+            <p>農園での見学や体験ツアーは行っていますか？</p>
+          </div>
+          <span class="icon">＋</span>
+        </button>
+
+        <div class="faq-answer">
+          <div class="a-left">
+            <span class="a">A</span>
+            <p>季節ごとに体験イベントを開催しています。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <div class="q-left">
+            <span class="q">Q</span>
+            <p>オンラインで注文した農産物はどのように配送されますか？</p>
+          </div>
+          <span class="icon">＋</span>
+        </button>
+
+        <div class="faq-answer">
+          <div class="a-left">
+            <span class="a">A</span>
+            <p>クール便にて新鮮な状態でお届けします。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <div class="q-left">
+            <span class="q">Q</span>
+            <p>農園で提供される季節ごとの野菜や果物の品種は何ですか？</p>
+          </div>
+          <span class="icon">＋</span>
+        </button>
+
+        <div class="faq-answer">
+          <div class="a-left">
+            <span class="a">A</span>
+            <p>季節によってさまざまな品種をお楽しみいただけます。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <script>
 const hamburger = document.getElementById("hamburger");
 const nav = document.querySelector(".nav");
@@ -168,6 +254,27 @@ const swiper = new Swiper(".activity-swiper", {
 });
 
 });
+</script>
+
+<script>
+
+  const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+  const question = item.querySelector(".faq-question");
+  const icon = item.querySelector(".icon");
+
+  question.addEventListener("click", () => {
+    item.classList.toggle("active");
+
+    if (item.classList.contains("active")) {
+      icon.textContent = "－";
+    } else {
+      icon.textContent = "＋";
+    }
+  });
+});
+
 </script>
 
 </body>
