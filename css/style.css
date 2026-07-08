@@ -255,17 +255,17 @@ NEWS（PC）
 
     /* NEWS（スマホ）中央配置 */
     .news-box {
-        width: 90%;
-        max-width: 340px;
-        height: 90px;
+      width: 90%;
+      max-width: 340px;
+      height: 90px;
 
-        left: 50%;
-        right: auto;
-        bottom: 90px;
-        transform: translateX(-50%);
+      left: 50%;
+      right: auto;
+      bottom: 120px;
+      transform: translateX(-50%);
 
-        border-radius: 20px;
-        padding: 14px 16px;
+      border-radius: 20px;
+      padding: 14px 16px;
     }
 
     /* SCROLL位置調整 */
@@ -276,10 +276,12 @@ NEWS（PC）
     }
 
     .fv-copy {
-        font-size: 32px;
-        padding: 0 10px;
-    }
+      font-size: 34px;
+      line-height: 1.5;
+      padding: 0 20px;
+    } 
 }
+
 
 /*========================
 私たちについて
