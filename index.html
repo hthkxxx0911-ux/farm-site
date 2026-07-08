@@ -49,12 +49,8 @@
         </div>
 
         <div class="news-box">
-           <p class="news-title">News</p>
-           <p class="news-date">YYYY.MM.DD</p>
-           <p class="news-text">
-               タイトルが入ります。タイトルが入り…<br>
-               タイトルが入ります。
-           </p>
+          <p class="news-date">2026.07.08</p>
+          <p class="news-title">夏野菜の販売を開始しました</p>
         </div>
 
     </div>
@@ -223,6 +219,103 @@
   </div>
 </section>
 
+<section class="news-section-title">
+
+  <div class="news-section-inner">
+
+    <!-- 左側 -->
+    <div class="news-section-text">
+
+      <h2 class="section-title">
+        お知らせ
+      </h2>
+
+      <p class="news-section-desc">
+        季節の農作物のお知らせ、見学ツアーのご案内、<br>
+        オンライン販売セールのお知らせなど、自然の恵み農園の<br>
+        最新情報をお届けします。
+      </p>
+
+      <a href="#" class="view-more-btn">
+        View More
+      </a>
+
+    </div>
+
+
+    <!-- 右側 -->
+    <div class="news-list-box">
+
+      <ul class="news-section-list">
+
+        <!-- 1件目 -->
+        <li class="news-section-item">
+
+          <div class="news-section-meta">
+            <span class="news-section-date">
+              2026.07.08
+            </span>
+
+            <span class="news-section-category">
+              お知らせ
+            </span>
+          </div>
+
+          <p class="news-section-title">
+            夏野菜の販売を開始しました
+          </p>
+
+        </li>
+
+
+        <!-- 2件目 -->
+        <li class="news-section-item">
+
+          <div class="news-section-meta">
+            <span class="news-section-date">
+              YYYY.MM.DD
+            </span>
+
+            <span class="news-section-category">
+              カテゴリー
+            </span>
+          </div>
+
+          <p class="news-section-title">
+            タイトルが入ります。タイトルが入ります。
+          </p>
+
+        </li>
+
+
+        <!-- 3件目 -->
+        <li class="news-section-item">
+
+          <div class="news-section-meta">
+            <span class="news-section-date">
+              YYYY.MM.DD
+            </span>
+
+            <span class="news-section-category">
+              カテゴリー
+            </span>
+          </div>
+
+          <p class="news-section-title">
+            タイトルが入ります。タイトルが入ります。
+          </p>
+
+        </li>
+
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
 <script>
 const hamburger = document.getElementById("hamburger");
 const nav = document.querySelector(".nav");
@@ -277,5 +370,24 @@ faqItems.forEach((item) => {
 
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const firstNews = document.querySelector('.news-item');
+
+  if (firstNews) {
+
+    const date = firstNews.querySelector('.news-date').textContent;
+    const title = firstNews.querySelector('.news-title').textContent;
+
+    document.querySelector('.fv-news-date').textContent = date;
+    document.querySelector('.fv-news-title').textContent = title;
+
+  }
+
+});
+</script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
