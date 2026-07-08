@@ -605,3 +605,72 @@ NEWS（PC）
     border-radius: 0 50px 50px 0;
   }
 }
+
+/* =====================
+活動紹介（スマホ）
+===================== */
+@media screen and (max-width: 768px) {
+
+  .activity-box {
+    width: calc(100% - 32px);
+    min-height: auto;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-radius: 30px;
+  }
+
+  .activity-content {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .activity-title {
+    margin-left: 0;
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .activity-title::after {
+    width: 180px;
+    bottom: -5px;
+  }
+
+  .activity-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .activity-btn {
+    width: 100%;
+    max-width: 280px;
+    height: 55px;
+    font-size: 14px;
+  }
+
+  .activity-text {
+    width: 100%;
+    margin: 40px 0;
+    font-size: 14px;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .activity-swiper {
+    width: calc(100% + 20px);
+    height: 180px;
+
+    margin-top: 40px;
+    margin-left: -20px;
+
+    transform: none;
+    overflow: hidden;
+  }
+
+  .activity-slide {
+    width: 220px;
+    height: 180px;
+  }
+}
