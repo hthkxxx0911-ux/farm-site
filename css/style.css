@@ -781,9 +781,22 @@ NEWS（PC）
 
 .access-left {
   width: 250px;
-  height: 600px;
   background: #93C572;
-  flex-shrink: 0;
+  box-sizing: border-box;
+  padding-top: 86px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.access-left p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #555;
+  white-space: nowrap;
+}
+
+.access-left .business-hours {
+  margin-bottom: 73px;
 }
 
 .access-left ul {
@@ -791,10 +804,10 @@ NEWS（PC）
 }
 
 .access-left li {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   color: #555;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .map-title {
@@ -802,7 +815,7 @@ NEWS（PC）
 }
 
 .map-link {
-  font-size: 20px !important;
+  font-size: 16px !important;
 }
 
 .access-right {
@@ -810,16 +823,31 @@ NEWS（PC）
 }
 
 .access-info {
-  padding: 80px;
+  padding-top: 66px;
+  padding-left: 50px;
 }
 
 .access-info p {
-  font-size: 32px;
-  color: #555;
-  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 45px;
+  margin: 0;
+}
+
+.access-info p:last-child {
+  margin-bottom: 52px;
+}
+
+.access-map {
+  width: 710px;
+  height: 400px;
 }
 
 .access-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
   display: block;
 }
 
