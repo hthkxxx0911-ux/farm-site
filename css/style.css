@@ -251,15 +251,21 @@ NEWS（PC）
         padding: 10px 0;
     }
 
-    /* お問い合わせ（ボタンやめる） */
-    .contact-btn {
+/* FVお問い合わせ（スマホ：ボタン解除） */
+@media screen and (max-width: 768px) {
+
+    .fv-contact-btn {
         width: 100%;
+        height: auto;
         background: none;
-        color: #333;
+        color: #333 !important;
         border-radius: 0;
+        border: none;
         font-size: 14px;
         font-weight: 700;
     }
+
+}
 
     /* NEWS（スマホ）中央配置 */
     .news-box {
@@ -953,12 +959,6 @@ NEWS（PC）
 }
 
 /* FV お問い合わせボタン */
-.fv .contact-btn {
-  background-color: #F7B560;
-  color: #fff !important;
-  border: none;
-}
-
 .contact-btn:hover {
   background: #93C572;
   color: #fff !important;
