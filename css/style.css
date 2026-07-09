@@ -508,14 +508,22 @@ NEWS（PC）
   position: relative;
 }
 
-.section-title span {
+/* セクションタイトル 波線 */
+.section-title::after,
+.activity-title::after,
+.news-heading::after {
+  content: "";
   display: block;
-  width: 180px;
-  height: 10px;
-  background: #b9d79a;
-  border-radius: 9999px;
-  margin: -10px auto 0;
+  width: 150px;
+  height: 30px;
+  margin: 1px auto 0;
+  background: url("/img/wave.png") center / contain no-repeat;
 }
+
+.faq .section-title::after {
+  width: 260px;
+}
+
 
 .faq-item {
   width: 960px;
@@ -604,17 +612,6 @@ NEWS（PC）
 
   position: relative;
   display: inline-block;
-}
-
-/* 波線 */
-.news-heading span {
-  display: block;
-  width: 180px;
-  height: 10px;
-  margin: 10px auto 0;
-
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='12' viewBox='0 0 220 12'%3E%3Cpath d='M0 6 C35 0, 70 12, 110 6 C150 0, 185 12, 220 6' fill='none' stroke='%2393C572' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")
-  no-repeat center / contain;
 }
 
 .news-section {
@@ -765,7 +762,7 @@ NEWS（PC）
 
 .access {
   padding: 120px 20px;
-  background: #fff;
+  background: #f5f5f5;
 }
 
 .access-box {
@@ -816,6 +813,11 @@ NEWS（PC）
 
 .map-link {
   font-size: 16px !important;
+}
+
+.map-link a {
+  color: #555;
+  text-decoration: none;
 }
 
 .access-right {
@@ -877,6 +879,109 @@ NEWS（PC）
     transform-origin: 50% calc(100% - 1px);
   }
 
+}
+
+/* =====================
+お問い合わせ
+===================== */
+
+.contact {
+  padding: 120px 20px;
+  background-color: #f5f5f5;
+}
+
+.contact-box {
+  width: 960px;
+  height: 450px;
+  margin: 0 auto;
+  background: #F7B560;
+  border-radius: 50px;
+
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 53px;
+}
+
+/* タイトル */
+.contact-box h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* 説明文 */
+.contact-text {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #fff;
+}
+
+
+/* ボタン */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 240px;
+  height: 70px;
+
+  margin-top: 35px;
+
+  border: 2px solid #93C572;
+  border-radius: 9999px;
+
+  background: #fff;
+  color: #93C572 !important;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  text-decoration: none;
+  transition: .3s;
+}
+
+.contact-btn:hover {
+  background: #93C572;
+  color: #fff !important;
+}
+
+
+/* 電話 */
+.contact-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 52px;
+  gap: 42px;
+}
+
+.tel-label {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tel-number {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+/* 受付時間 */
+.contact-time {
+  margin-top: 15px;
+  margin-bottom: 53px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 
 /*========================
@@ -1105,13 +1210,6 @@ padding: 15px 25px 25px;
     letter-spacing: 3px;
   }
 
-  /* 波線 */
-  .news-heading span {
-    width: 140px;
-    height: 8px;
-    margin-top: 8px;
-  }
-
   /* 本文 */
   .news-section-desc {
     margin-top: 30px;
@@ -1165,6 +1263,122 @@ padding: 15px 25px 25px;
   .news-section-item {
     padding-bottom: 25px;
     margin-bottom: 25px;
+  }
+
+}
+
+/* =====================
+スマホ（768px以下）
+アクセス
+===================== */
+
+@media screen and (max-width: 768px) {
+
+  .access {
+    padding: 80px 20px;
+  }
+
+  .access-box {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50px;
+  }
+
+  .access-left {
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+  }
+
+  .access-left p {
+    font-size: 16px;
+  }
+
+  .access-left li {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .map-title {
+    margin-top: 50px;
+  }
+
+  .access-info {
+    padding: 40px 30px;
+  }
+
+  .access-info p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .access-map {
+    width: 100%;
+    height: 300px;
+  }
+
+  .access-map iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
+/* =====================
+スマホ（768px以下）
+お問い合わせ
+===================== */
+
+@media screen and (max-width: 768px) {
+
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contact-box {
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    border-radius: 40px;
+    padding: 40px 20px 50px;
+  }
+
+  .contact-box h2 {
+    font-size: 30px;
+  }
+
+  .contact-text {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 30px;
+  }
+
+  .contact-btn {
+    width: 220px;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .contact-tel {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .tel-label {
+    font-size: 16px;
+  }
+
+  .tel-number {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+
+  .contact-time {
+    font-size: 15px;
+    margin-top: 15px;
   }
 
 }
