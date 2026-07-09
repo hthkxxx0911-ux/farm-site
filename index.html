@@ -89,7 +89,7 @@
   </div>
 </section>
 
-<section class="activity">
+<section id="activity" class="activity">
   <div class="activity-box">
 
     <div class="activity-content">
@@ -133,7 +133,7 @@
   </div>
 </section>
 
-<section class="faq">
+<section id="faq" class="faq">
   <div class="inner">
 
     <h2 class="section-title">
@@ -218,7 +218,7 @@
   </div>
 </section>
 
-<section class="news-section">
+<section id="news" class="news-section">
 
   <div class="news-section-inner">
 
@@ -315,7 +315,7 @@
 
 </section>
 
-<section class="access">
+<section id="access" class="access">
   <div class="section-title">
     <h2>アクセス</h2>
   </div>
@@ -358,7 +358,7 @@
   </div>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
   <div class="contact-box">
 
     <h2>お問い合わせ</h2>
@@ -454,6 +454,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
+});
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(function () {
+  $('a[href^="#"]').on('click', function () {
+    const speed = 500;
+    const href = $(this).attr('href');
+    const target = $(href);
+
+    if (!target.length) return false;
+
+    const position = target.offset().top;
+
+    $('html, body').animate(
+      {
+        scrollTop: position
+      },
+      speed
+    );
+
+    return false;
+  });
 });
 </script>
 
