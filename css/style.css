@@ -1,4 +1,12 @@
 /* =====================
+全体フォント
+===================== */
+html,
+body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+}
+
+/* =====================
 ヘッダー（PC）
 ===================== */
 .header {
@@ -88,7 +96,7 @@ FV
 }
 
 /* ボタン */
-.contact-btn {
+.fv-contact-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -942,6 +950,13 @@ NEWS（PC）
 
   text-decoration: none;
   transition: .3s;
+}
+
+/* FV お問い合わせボタン */
+.fv .contact-btn {
+  background-color: #F7B560;
+  color: #fff !important;
+  border: none;
 }
 
 .contact-btn:hover {
