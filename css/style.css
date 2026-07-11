@@ -628,27 +628,23 @@ NEWS（PC）
   display: inline-block;
 }
 
-.news-section {
-  padding: 120px 0;
-  background: #f5f5f5;
-}
-
 .news-section-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 0;
+  box-sizing: border-box;
+
+  gap: 60px;
+
+  background-color: #f5f5f5 !important;
 }
 
-
-/* =====================
-お知らせ 左側
-===================== */
-
 .news-section .news-section-text {
-  width: 30%;
-  padding-left: 0;
-  position: relative;
-  left: 270px;
+  margin-left: 60px;
 }
 
 /* お知らせタイトル */
@@ -711,20 +707,14 @@ NEWS（PC）
 }
 
 .news-list-box {
-  width: 750px;
-  min-height: 438px;
-
+  width: 65%;
+  max-width: 750px;
   background: #fff;
   box-shadow: 1px 1px 10px rgba(0,0,0,.16);
   border-radius: 100px 0 0 100px;
 
   padding: 80px;
   box-sizing: border-box;
-
-  margin-left: auto;
-  margin-right: -80px;
-
-  overflow: hidden;
 }
 
 .news-section-list {
@@ -1079,7 +1069,7 @@ NEWS（PC）
 私たちについて（スマホ）
 ========================*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
   .about {
     padding: 60px 20px;
@@ -1166,7 +1156,7 @@ NEWS（PC）
 /* =====================
 活動紹介（スマホ）
 ===================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
   .activity-box {
     width: calc(100% - 32px);
@@ -1232,8 +1222,7 @@ NEWS（PC）
   }
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width:768px) {
 .faq-item {
 width: calc(100% - 40px);
 margin-left: auto;
@@ -1277,21 +1266,17 @@ padding: 15px 25px 25px;
 /* =====================
 お知らせ（スマホ）
 ===================== */
-@media screen and (max-width: 768px) {
-
-  .news-section {
-    padding: 60px 20px;
-  }
+@media screen and (max-width:768px) {
 
   .news-section-inner {
-    display: block;
+    flex-direction: column;
+    padding: 0;
   }
 
-  /* 左側 */
-  .news-section .news-section-text {
+
+
+  .news-section-text {
     width: 100%;
-    padding-left: 0;
-    left: 0;
     text-align: center;
   }
 
@@ -1316,40 +1301,45 @@ padding: 15px 25px 25px;
     font-size: 18px;
   }
 
-  /* NEWSボックス */
-  .news-list-box {
-    width: 100%;
-    min-height: auto;
-
-    padding: 40px 25px;
-
-    margin: 0;
-
-    border-radius: 50px 0 0 50px;
+    .view-more-pc {
+    display: none;
   }
 
+  .view-more-sp {
+    display: flex;
+    margin: 20px auto 0;
+  }
+
+}
+ /* NEWSボックス（スマホ） */
+@media screen and (max-width:768px) {
+
+  .news-list-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 0;
+  }
 
   .news-section-meta {
     gap: 10px;
     margin-bottom: 15px;
   }
 
-
   .news-section-date {
     font-size: 14px;
   }
-
 
   .news-section-category {
     font-size: 12px;
     padding: 3px 10px;
   }
 
-
   .news-section-title {
     font-size: 16px;
   }
-
 
   .news-section-item {
     padding-bottom: 25px;
@@ -1363,7 +1353,7 @@ padding: 15px 25px 25px;
 アクセス
 ===================== */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
   .access {
     padding: 80px 20px;
@@ -1422,7 +1412,7 @@ padding: 15px 25px 25px;
 お問い合わせ
 ===================== */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
   .contact {
     padding: 80px 20px;
@@ -1474,7 +1464,7 @@ padding: 15px 25px 25px;
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
   .footer-inner {
     width: 100%;
