@@ -296,6 +296,18 @@ NEWS（PC）
     } 
 }
 
+/* セクションタイトル 波線 */
+.section-title::after,
+.activity-title::after,
+.news-heading::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 30px;
+  margin: 1px auto 0;
+  background: url("/img/wave.png") center / contain no-repeat;
+}
+
 
 /*========================
 私たちについて
@@ -311,7 +323,7 @@ NEWS（PC）
   width: 960px;
   height: 703px;
   margin: 0 auto;
-  background: #f5f5f5f;
+  background: #f5f5f5;
 }
 
 /* 真ん中 */
@@ -388,21 +400,6 @@ NEWS（PC）
   position: relative;
 
   margin-bottom: 35px;
-}
-
-.activity-title::after {
-  content: "";
-  position: absolute;
-
-  left: 50%;
-  bottom: -4px;
-  transform: translateX(-50%);
-
-  width: 180px;
-  height: 12px;
-
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='12' viewBox='0 0 220 12'%3E%3Cpath d='M0 6 C35 0, 70 12, 110 6 C150 0, 185 12, 220 6' fill='none' stroke='%234F8A3D' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")
-  no-repeat center / contain;
 }
 
 .activity-buttons {
@@ -522,18 +519,6 @@ NEWS（PC）
   position: relative;
 }
 
-/* セクションタイトル 波線 */
-.section-title::after,
-.activity-title::after,
-.news-heading::after {
-  content: "";
-  display: block;
-  width: 150px;
-  height: 30px;
-  margin: 1px auto 0;
-  background: url("/img/wave.png") center / contain no-repeat;
-}
-
 .faq .section-title::after {
   width: 260px;
 }
@@ -546,13 +531,33 @@ NEWS（PC）
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  overflow: hidden;
+  position: relative;
+}
+
+.faq-item::before,
+.faq-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 4px;
+  height: 18px;   /* ←小さくする */
+  background: #f5f5f5;
+}
+
+.faq-item::before {
+  left: -3px;
+}
+
+.faq-item::after {
+  right: -3px;
 }
 
 .faq-question {
   width: 100%;
   height: 70px;
-  background: #fff;
+  background-color: transparent;
   border: none;
   padding: 0 40px;
   display: flex;
@@ -608,7 +613,7 @@ NEWS（PC）
   display: none;
   height: 120px;
   padding: 20px 40px 0;
-  background-color: #fff;
+  background-color: transparent;
   box-sizing: border-box;
 }
 
