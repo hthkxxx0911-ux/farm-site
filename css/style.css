@@ -648,6 +648,10 @@ NEWS（PC）
   background-color: #f5f5f5 !important;
 }
 
+.view-more-sp {
+  display: none !important;
+}
+
 .news-section .news-section-text {
   margin-left: 60px;
 }
@@ -720,6 +724,8 @@ NEWS（PC）
 
   padding: 80px;
   box-sizing: border-box;
+  margin-right: -60px;
+
 }
 
 .news-section-list {
@@ -1278,8 +1284,6 @@ padding: 15px 25px 25px;
     padding: 0;
   }
 
-
-
   .news-section-text {
     width: 100%;
     text-align: center;
@@ -1306,16 +1310,15 @@ padding: 15px 25px 25px;
     font-size: 18px;
   }
 
-    .view-more-pc {
+  .view-more-pc {
     display: none;
   }
 
   .view-more-sp {
-    display: flex;
-    margin: 20px auto 0;
+    display: flex !important;
   }
-
 }
+
  /* NEWSボックス（スマホ） */
 @media screen and (max-width:768px) {
 
